@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/guide_asian"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@id/relative_for_search"
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="150dp"
+        android:background="#66000000" >
+
+        <TextView
+            android:id="@id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/am"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/textsize" />
+
+        <TextView
+            android:id="@id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text"
+            android:layout_marginLeft="30dp"
+            android:text="@string/look"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/textsize" />
+
+        <EditText
+            android:id="@id/search_bar"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/text2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/search_bar_background"
+            android:hint="@string/in"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:textColor="@color/textcolor"
+            android:textColorHint="@color/textcolor"
+            android:textSize="@dimen/textsize2" >
+
+        </EditText>
+
+        <Button
+            android:id="@id/button2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@id/search_bar"
+            android:layout_alignBottom="@id/search_bar"
+            android:layout_alignRight="@id/search_bar"
+            android:background="@drawable/button_select"
+            android:text="@string/go"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize2"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</LinearLayout>

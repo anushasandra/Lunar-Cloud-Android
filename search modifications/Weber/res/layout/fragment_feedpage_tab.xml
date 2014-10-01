@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/feed_bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="7dp" >
+
+        <EditText
+            android:id="@id/status_of_user_in_feed_page"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:background="@drawable/status_in_feed_page"
+            android:hint="@string/feed_page_enter_status"
+            android:inputType="textMultiLine"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@id/post_status_in_feed_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/status_of_user_in_feed_page"
+            android:background="@drawable/status_in_feed_page"
+            android:clickable="true"
+            android:text="@string/post_your_status"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@id/listview_feed_page"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/status_of_user_in_feed_page"
+            android:layout_margin="5dp"
+            android:background="@color/image_text_color"
+            android:divider="@color/feed_bg_color"
+            android:dividerHeight="10dp" >
+        </ListView>
+    </RelativeLayout>
+
+</LinearLayout>

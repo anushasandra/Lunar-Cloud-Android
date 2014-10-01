@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/image_text_color" >
+
+    <ImageView
+        android:id="@+id/msg_profile_pic_result_page_id"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:contentDescription="@string/Feed"
+        android:src="@drawable/baby1" />
+
+    <TextView
+        android:id="@+id/msg_profile_name_result_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/msg_profile_pic_result_page_id"
+        android:layout_toRightOf="@+id/msg_profile_pic_result_page_id"
+        android:text="saikrishna"
+        android:textColor="@color/profile_name_result_page"
+        android:textSize="@dimen/activity_horizontal_margin" />
+
+    <TextView
+        android:id="@+id/msg_paragraph_text_result_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/msg_profile_name_result_page"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/msg_profile_pic_result_page_id"
+        android:text="hai how r u"
+        android:textColor="@color/black"
+        android:textSize="@dimen/activity_horizontal_margin" />
+
+    <TextView
+        android:id="@+id/msg_time_textview_of_result_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/msg_profile_name_result_page"
+        android:layout_alignBottom="@+id/msg_profile_name_result_page"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:text="12 12"
+        android:textColor="#808080"
+        android:textSize="@dimen/location_text_size_result_page" />
+
+</RelativeLayout>

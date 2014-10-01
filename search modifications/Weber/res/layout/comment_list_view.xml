@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/feed_bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="7dp" >
+
+        <ListView
+            android:id="@+id/comments_page_data_frag"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_below="@id/status_of_user_in_feed_page"
+            android:background="@color/image_text_color"
+            android:divider="@color/feed_bg_color"
+            android:dividerHeight="10dp" >
+        </ListView>
+
+        <EditText
+            android:id="@+id/editText1_comment"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/comments_page_data_frag"
+            android:layout_marginTop="10dp"
+            android:background="#cccccc"
+            android:hint="@string/edit_hint_cmt"
+            android:paddingLeft="5dp"
+            android:textSize="@dimen/text_size" >
+        </EditText>
+
+        <Button
+            android:id="@+id/button1_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignTop="@id/editText1_comment"
+            android:layout_toRightOf="@id/editText1_comment"
+            android:background="@drawable/custom"
+            android:text="@string/post_your_status"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size" />
+    </RelativeLayout>
+
+</LinearLayout>
